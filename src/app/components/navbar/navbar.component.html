@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/home">
+        <img src="/assets/images/icon.png" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="" loading="lazy">
+        Sebastián Aguirre
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive='active'>
+                <a class="nav-link" [routerLink]="['clase-1']"> Clase 1 </a>
+            </li>
+            <li class="nav-item" routerLinkActive='active'>
+                <a class="nav-link" routerLink='clase-2'> Clase 2</a>
+            </li>
+            <li class="nav-item" routerLinkActive='active'>
+                <a class="nav-link" routerLink='clase-3' > Clase 3 </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,23 @@
+<div class="col fadeIn faster text-center">
+  <h1>Listado de Entidades</h1>
+  <table class="table table-striped">
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Foto</th>
+              <th scope="col">Info</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let entidad of entidadesUsuario">
+              <th> {{ entidad.id}} </th>
+              <td> {{ entidad.Nombre }} </td>
+              <td> {{ entidad.Sexo }} </td>
+              <td> <img [src]="entidad.FotoPerfil" alt=""></td>
+              <td><button class="btn btn-info" (click)="verMas(entidad)">Ver más</button></td>
+          </tr>
+      </tbody>
+  </table>
+</div>

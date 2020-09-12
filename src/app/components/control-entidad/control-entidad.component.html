@@ -1,0 +1,10 @@
+<div class="row mb-5 fadeIn faster">
+    <div class="col-12 text-center">
+        <h1> Control Entidades</h1>
+    </div>
+</div>
+
+<div class="row m-5 justify-content-around">
+    <app-listado-entidad [entidadesUsuario]="entidadesUsuario" (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)"></app-listado-entidad>
+    <app-detalle-entidad [entidadUsuario]="entidadUsuario"></app-detalle-entidad>
+</div>

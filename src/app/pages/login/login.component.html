@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row m-5 animated fadeIn faster justify-content-center">
+      <div class="col">
+          <div class="text-center mb-5">
+              <h1>Clase 2: Login</h1>
+          </div>
+          <h4>Login</h4>
+          <hr>
+          <form autocomplete="off" (ngSubmit)="login(f)" #f="ngForm">
+              <div class="form-group row ">
+                  <label class="col-2 col-form-label" [class.text-danger]="email.invalid && email.touched">Email</label>
+                  <div class="col-8 ">
+                      <input class="form-control " type="text" placeholder="Correo electrónico" name="email" [(ngModel)]="usuario.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
+                      <small class="form-text text-danger" *ngIf="email.invalid && email.touched">Ingresar: admin@gmail.com</small>
+                  </div>
+              </div>
+
+              <div class="form-group row">
+                  <label class="col-2 col-form-label" [class.text-danger]="clave.invalid && clave.touched">Clave</label>
+                  <div class="col-8">
+                      <input class="form-control" type="text" placeholder="Clave" name="clave" required [(ngModel)]="usuario.clave" [class.is-invalid]="clave.invalid && clave.touched" #clave="ngModel" minlength="6">
+                      <small class="form-text text-danger" *ngIf="clave.invalid && clave.touched">Ingresar: 123456</small>
+                  </div>
+              </div>
+
+              <div class="form-group row ">
+                  <label class="col-2 col-form-label ">&nbsp;</label>
+                  <div class="input-group col-md-8 ">
+                      <button type="submit " class="btn btn-outline-primary btn-block"> Ingresar </button>
+                  </div>
+              </div>
+        </form>
+    </div>
+</div>
+
+</div>
