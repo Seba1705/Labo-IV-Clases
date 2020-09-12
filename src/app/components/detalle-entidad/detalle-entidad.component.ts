@@ -1,6 +1,6 @@
 
 import { Component, OnInit, Input, Output } from '@angular/core';
-import { EntidadUsuario } from '../../clases/entidadUsuario.class'
+import { EntidadUsuario } from '../../clases/entidadUsuario.class';
 
 @Component({
     selector: 'app-detalle-entidad',

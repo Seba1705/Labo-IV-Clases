@@ -6,11 +6,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EntidadesService {
 
-    private url = 'https://api.mocki.io/v1/570c5e5c';
+    private urlUsuarios = 'https://api.mocki.io/v1/570c5e5c';
+    private urlPaises = 'https://restcountries.eu/rest/v2/all';
 
     constructor(private http: HttpClient) { }
 
-    getEntidades() {
-        return this.http.get(this.url);
+    getUsuarios() {
+        return this.http.get(this.urlUsuarios);
+    }
+
+    getPaises() {
+        return this.http.get(this.urlPaises);
     }
 }

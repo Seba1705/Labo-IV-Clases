@@ -1,0 +1,22 @@
+<div class="col fadeIn faster text-center">
+    <h1>Listado de Paises</h1>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Code</th>
+                <th>Nombre</th>
+                <th>Bandera</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pais of entidadesPaises">
+                <th> {{ pais.alpha3Code}} </th>
+                <td> {{ pais.name }} </td>
+                <td> <img [src]="pais.flag" alt=""></td>
+                <td><button class="btn btn-info" (click)="verDetalleDelPais(pais)">Ver más</button></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  

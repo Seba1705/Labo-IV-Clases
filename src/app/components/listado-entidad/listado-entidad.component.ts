@@ -1,6 +1,5 @@
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { EntidadUsuario } from '../../clases/entidadUsuario.class';
 
 @Component({
     selector: 'app-listado-entidad',
@@ -9,8 +8,8 @@ import { EntidadUsuario } from '../../clases/entidadUsuario.class';
 })
 export class ListadoEntidadComponent implements OnInit {
 
-    @Input() entidadesUsuario: EntidadUsuario[] = [];
-    @Output() usuarioSeleccionado: EventEmitter<any> = new EventEmitter();
+    @Input() entidades: any[] = [];
+    @Output() entidadSeleccionada: EventEmitter<any> = new EventEmitter();
 
     constructor() { }
 
@@ -18,7 +17,7 @@ export class ListadoEntidadComponent implements OnInit {
 
     }
 
-    verMas(entidad: EntidadUsuario) {
-        this.usuarioSeleccionado.emit(entidad);
+    verMas(entidad: any) {
+        this.entidadSeleccionada.emit(entidad);
     }
 }

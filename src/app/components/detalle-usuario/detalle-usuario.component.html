@@ -1,0 +1,12 @@
+<div class="col fadeIn faster">
+    <h1>Detalle Usuario</h1>
+    <div class="card" style="width: 18rem;" *ngIf="entidadUsuario">
+        <img class="card-img-top" [src]="entidadUsuario.FotoPerfil" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> Nombre: {{ entidadUsuario.Nombre }} </h5>
+            <p class="card-text"> Sexo: {{ entidadUsuario.Sexo }} </p>
+           
+        </div>
+    </div>
+  </div>
+  

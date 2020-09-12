@@ -8,6 +8,10 @@ import { DetalleEntidadComponent } from './detalle-entidad/detalle-entidad.compo
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { ListadoUsuariosComponent } from './listado-usuarios/listado-usuarios.component';
+import { ListadoPaisesComponent } from './listado-paises/listado-paises.component';
+import { DetalleUsuarioComponent } from './detalle-usuario/detalle-usuario.component';
+import { DetallePaisComponent } from './detalle-pais/detalle-pais.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { UsuarioComponent } from './usuario/usuario.component';
         NavbarComponent,
         ListadoEntidadComponent,
         DetalleEntidadComponent,
-        UsuarioComponent
+        UsuarioComponent,
+        ListadoUsuariosComponent,
+        ListadoPaisesComponent,
+        DetalleUsuarioComponent,
+        DetallePaisComponent
     ],
     imports: [
         CommonModule,
@@ -29,7 +37,11 @@ import { UsuarioComponent } from './usuario/usuario.component';
         NavbarComponent,
         ListadoEntidadComponent,
         DetalleEntidadComponent,
-        UsuarioComponent
+        UsuarioComponent,
+        ListadoUsuariosComponent,
+        ListadoPaisesComponent,
+        DetalleUsuarioComponent,
+        DetallePaisComponent
     ]
 })
 export class ComponentsModule { }

@@ -4,7 +4,11 @@
     </div>
 </div>
 
-<div class="row m-5 justify-content-around">
-    <app-listado-entidad [entidadesUsuario]="entidadesUsuario" (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)"></app-listado-entidad>
-    <app-detalle-entidad [entidadUsuario]="entidadUsuario"></app-detalle-entidad>
+<!-- <div class="row mt-5 justify-content-center">
+    <app-listado-usuarios [entidadesUsuario]="entidadesUsuario" (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)"></app-listado-usuarios>
+    <app-detalle-usuario [entidadUsuario]="entidadUsuario"></app-detalle-usuario>
+</div> -->
+<div class="row mt-5 justify-content-center">
+    <app-listado-paises [entidadesPaises]="entidadesPaises" (paisSeleccionado)="tomarPaisParaDetalles($event)"></app-listado-paises>
+    <app-detalle-pais [entidadPais]="entidadPais"></app-detalle-pais>
 </div>
