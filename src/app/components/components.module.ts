@@ -1,6 +1,7 @@
 import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -37,7 +38,8 @@ import { BotonPaisComponent } from './boton-pais/boton-pais.component';
         CommonModule,
         HttpClientModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        RouterModule
     ],
     exports: [
         ControlEntidadComponent,
