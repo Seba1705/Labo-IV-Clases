@@ -1,14 +1,35 @@
 <div class="row mb-5 fadeIn faster">
     <div class="col-12 text-center">
         <h1> Control Entidades</h1>
+        <button class="btn btn-outline-dark" 
+                (click)="mostrarUsuarios = !mostrarUsuarios"> Cambio de Grilla 
+        </button>
     </div>
 </div>
 
-<!-- <div class="row mt-5 justify-content-center">
-    <app-listado-usuarios [entidadesUsuario]="entidadesUsuario" (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)"></app-listado-usuarios>
-    <app-detalle-usuario [entidadUsuario]="entidadUsuario"></app-detalle-usuario>
-</div> -->
-<div class="row mt-5 justify-content-center">
-    <app-listado-paises [entidadesPaises]="entidadesPaises" (paisSeleccionado)="tomarPaisParaDetalles($event)"></app-listado-paises>
-    <app-detalle-pais [entidadPais]="entidadPais"></app-detalle-pais>
+<div class="row mt-5 justify-content-around" *ngIf="mostrarUsuarios">
+    <app-listado-usuarios   [titulo]="'Listado de Usuarios'" 
+                            [entidadesUsuario]="entidadesUsuario" 
+                            (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)">
+    </app-listado-usuarios>
+    <app-detalle-usuario    [titulo]="'Detalle Usuario'" 
+                            [entidadUsuario]="entidadUsuario">
+    </app-detalle-usuario>
+</div>
+<div class="row mt-5 justify-content-around" *ngIf="mostrarUsuarios">
+    <app-listado-usuarios   [titulo]="'Usuarios Borrados'" 
+                            [entidadesUsuarioBorradas]="entidadesUsuarioBorradas" 
+                            (usuarioSeleccionado)="tomarUsuarioBorradoParaDetalles($event)">
+    </app-listado-usuarios>
+    <app-detalle-usuario    [titulo]="'Detalle Usuario Borrado'" 
+                            [entidadUsuario]="entidadUsuarioBorrado">
+    </app-detalle-usuario>
+</div>
+<div class="row mt-5 justify-content-around" *ngIf="!mostrarUsuarios">
+    <app-listado-paises     [entidadesPaises]="entidadesPaises" 
+                            (paisSeleccionado)="tomarPaisParaDetalles($event)">
+    </app-listado-paises>
+    <app-detalle-pais       [entidadPais]="entidadPais">
+
+    </app-detalle-pais>
 </div>

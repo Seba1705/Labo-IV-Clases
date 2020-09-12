@@ -9,6 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DetalleUsuarioComponent implements OnInit {
 
     @Input() entidadUsuario: EntidadUsuario;
+    @Input() titulo: string;
+
+
     constructor() { }
 
     ngOnInit(): void {

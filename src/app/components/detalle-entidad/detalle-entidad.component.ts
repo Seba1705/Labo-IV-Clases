@@ -1,6 +1,5 @@
+import { Component, OnInit, Input } from '@angular/core';
 
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EntidadUsuario } from '../../clases/entidadUsuario.class';
 
 @Component({
     selector: 'app-detalle-entidad',
@@ -9,7 +8,9 @@ import { EntidadUsuario } from '../../clases/entidadUsuario.class';
 })
 export class DetalleEntidadComponent implements OnInit {
 
-    @Input() entidadUsuario: EntidadUsuario;
+    @Input() EntidadesService: any;
+    @Input() titulo: string;
+
 
     constructor() {
     }

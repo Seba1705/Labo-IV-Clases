@@ -11,6 +11,8 @@ export class ListadoUsuariosComponent implements OnInit {
     @Input() entidadesUsuario: EntidadUsuario[] = [];
     @Output() usuarioSeleccionado: EventEmitter<any> = new EventEmitter();
 
+    @Input() titulo: string;
+
     constructor() { }
 
     ngOnInit(): void {
