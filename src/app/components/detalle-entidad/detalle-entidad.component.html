@@ -1,11 +1,11 @@
 <div class="col fadeIn faster">
-  <h1>Detalle Entidad</h1>
-  <!-- <div class="card" style="width: 18rem;" *ngIf="entidad">
-      <img class="card-img-top" [src]="entidad.foto" alt="Card image cap">
-      <div class="card-body">
-          <h5 class="card-title"> Nombre: {{ entidad.Nombre }} </h5>
-          <p class="card-text"> Sexo: {{ entidad.Sexo }} </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-  </div> -->
+    <h1> {{ titulo }} </h1>
+    <div class="card" style="width: 18rem;" *ngIf="entidad">
+        <img class="card-img-top" [src]="entidad.FotoPerfil" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> Nombre: {{ entidad.Nombre }} </h5>
+            <p class="card-text"> Sexo: {{ entidad.Sexo }} </p>
+            
+        </div>
+    </div>
 </div>

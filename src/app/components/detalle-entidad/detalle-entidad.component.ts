@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DetalleEntidadComponent implements OnInit {
 
-    @Input() EntidadesService: any;
+    @Input() entidad: any;
     @Input() titulo: string;
 
 

@@ -11,12 +11,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let entidad of entidadesUsuario">
+            <tr *ngFor="let entidad of entidadesUsuario;">
                 <th> {{ entidad.id}} </th>
                 <td> {{ entidad.Nombre }} </td>
                 <td> {{ entidad.Sexo }} </td>
                 <td> <img [src]="entidad.FotoPerfil" alt=""></td>
-                <td><button class="btn btn-info" (click)="verDetalleDelUsuario(entidad)">Ver más</button></td>
+                <td><button class="btn btn-info" 
+                            (click)="verDetalleDelUsuario(entidad)">Ver más
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>

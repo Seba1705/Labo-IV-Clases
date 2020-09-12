@@ -8,7 +8,7 @@
             <h5 class="card-title"> Nombre: {{ entidadUsuario.Nombre }} </h5>
             <p class="card-text"> Sexo: {{ entidadUsuario.Sexo }} </p>
             <app-boton-usuario  [entidadUsuario]="entidadUsuario" 
-                                >
+                                (usuarioParaBorrar)="tomarUsuarioDesdeBoton($event)">
             </app-boton-usuario>
         </div>
     </div>
