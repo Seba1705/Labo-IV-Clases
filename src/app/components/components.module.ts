@@ -32,7 +32,7 @@ import { BotonPaisComponent } from './boton-pais/boton-pais.component';
         DetallePaisComponent,
         BotonEntidadComponent,
         BotonUsuarioComponent,
-        BotonPaisComponent
+        BotonPaisComponent,
     ],
     imports: [
         CommonModule,

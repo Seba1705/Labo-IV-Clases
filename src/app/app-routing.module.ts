@@ -1,3 +1,4 @@
+import { DirectivasComponent } from './pages/directivas/directivas.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BienvenidoComponent } from './pages/bienvenido/bienvenido.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'clase-1', component: BienvenidoComponent },
     { path: 'clase-2', component: LoginComponent },
     { path: 'clase-3', component: InputOutputComponent },
+    { path: 'clase-4', component: DirectivasComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

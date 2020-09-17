@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { LoginComponent } from './login/login.component';
+import { DirectivasComponent } from './directivas/directivas.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
         InputOutputComponent,
         BienvenidoComponent,
-        LoginComponent
+        LoginComponent,
+        DirectivasComponent
     ],
     imports: [
         CommonModule,
