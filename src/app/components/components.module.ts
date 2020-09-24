@@ -1,3 +1,8 @@
+import { ListadoMateriaComponent } from './materia/listado-materia/listado-materia.component';
+import { TablaAlumnoComponent } from './tabla-alumno/tabla-alumno.component';
+import { DetalleMateriaComponent } from './materia/detalle-materia/detalle-materia.component';
+import { FormAlumnoComponent } from './form-alumno/form-alumno.component';
+import { DetalleAlumnoComponent } from './detalle-alumno/detalle-alumno.component';
 import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -17,6 +22,8 @@ import { DetallePaisComponent } from './detalle-pais/detalle-pais.component';
 import { BotonEntidadComponent } from './boton-entidad/boton-entidad.component';
 import { BotonUsuarioComponent } from './boton-usuario/boton-usuario.component';
 import { BotonPaisComponent } from './boton-pais/boton-pais.component';
+import { AdminComponent } from './admin/admin.component';
+import { ListadoAlumnoComponent } from './alumno/listado-alumno/listado-alumno.component';
 
 
 @NgModule({
@@ -33,6 +40,13 @@ import { BotonPaisComponent } from './boton-pais/boton-pais.component';
         BotonEntidadComponent,
         BotonUsuarioComponent,
         BotonPaisComponent,
+        AdminComponent,
+        DetalleAlumnoComponent,
+        FormAlumnoComponent,
+        DetalleMateriaComponent,
+        TablaAlumnoComponent,
+        ListadoAlumnoComponent,
+        ListadoMateriaComponent
     ],
     imports: [
         CommonModule,
@@ -53,7 +67,14 @@ import { BotonPaisComponent } from './boton-pais/boton-pais.component';
         DetallePaisComponent,
         BotonEntidadComponent,
         BotonUsuarioComponent,
-        BotonPaisComponent
+        BotonPaisComponent,
+        AdminComponent,
+        DetalleAlumnoComponent,
+        FormAlumnoComponent,
+        DetalleMateriaComponent,
+        TablaAlumnoComponent,
+        ListadoAlumnoComponent,
+        ListadoMateriaComponent
     ]
 })
 export class ComponentsModule { }
