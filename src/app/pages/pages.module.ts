@@ -10,6 +10,7 @@ import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { LoginComponent } from './login/login.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { PracticaComponent } from './practica/practica.component';
+import { ListadoComponent } from './listado/listado.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { PracticaComponent } from './practica/practica.component';
         BienvenidoComponent,
         LoginComponent,
         DirectivasComponent,
-        PracticaComponent
+        PracticaComponent,
+        ListadoComponent
     ],
     imports: [
         CommonModule,

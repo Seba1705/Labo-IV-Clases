@@ -1,3 +1,4 @@
+import { ListadoComponent } from './pages/listado/listado.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -19,6 +20,7 @@ const routes: Routes = [
     { path: 'clase-3', component: InputOutputComponent },
     { path: 'clase-4', component: DirectivasComponent },
     { path: 'clase-5', component: PracticaComponent },
+    { path: 'clase-5B', component: ListadoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

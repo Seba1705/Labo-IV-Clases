@@ -29,7 +29,6 @@ export class ControlPaisComponent implements OnInit {
         this.region = region;
         this.entidadesService.getPaises(region)
             .subscribe((resp: EntidadPais[]) => {
-                console.log(resp);
                 this.entidadesPaises = resp;
         });
     }

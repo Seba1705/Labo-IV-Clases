@@ -25,6 +25,10 @@ import { BotonPaisComponent } from './boton-pais/boton-pais.component';
 import { AdminComponent } from './admin/admin.component';
 import { ListadoAlumnoComponent } from './alumno/listado-alumno/listado-alumno.component';
 import { ControlPaisComponent } from './control-pais/control-pais.component';
+import { ControlListadoComponent } from './control-listado/control-listado.component';
+import { BorrarComponent } from './borrar/borrar.component';
+import { DetalleComponent } from './detalle/detalle.component';
+import { ModificacionComponent } from './modificacion/modificacion.component';
 
 
 @NgModule({
@@ -48,7 +52,11 @@ import { ControlPaisComponent } from './control-pais/control-pais.component';
         TablaAlumnoComponent,
         ListadoAlumnoComponent,
         ListadoMateriaComponent,
-        ControlPaisComponent
+        ControlPaisComponent,
+        ControlListadoComponent,
+        BorrarComponent,
+        DetalleComponent,
+        ModificacionComponent
     ],
     imports: [
         CommonModule,
@@ -76,8 +84,9 @@ import { ControlPaisComponent } from './control-pais/control-pais.component';
         DetalleMateriaComponent,
         TablaAlumnoComponent,
         ListadoAlumnoComponent,
+        ListadoMateriaComponent,
         ControlPaisComponent,
-        ListadoMateriaComponent
+        ControlListadoComponent
     ]
 })
 export class ComponentsModule { }
