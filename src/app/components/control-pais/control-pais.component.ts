@@ -18,8 +18,7 @@ export class ControlPaisComponent implements OnInit {
     constructor(private entidadesService: EntidadesService) { }
 
     ngOnInit(): void {
-
-       
+        this.getPaises(this.region);
     }
 
     tomarPaisParaDetalles(entidad: EntidadPais) {
@@ -27,6 +26,7 @@ export class ControlPaisComponent implements OnInit {
     }
 
     getPaises(region: string) {
+        this.region = region;
         this.entidadesService.getPaises(region)
             .subscribe((resp: EntidadPais[]) => {
                 console.log(resp);
