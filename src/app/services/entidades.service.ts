@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class EntidadesService {
 
     private urlUsuarios = 'https://api.mocki.io/v1/570c5e5c';
-    private urlPaises = 'https://restcountries.eu/rest/v2/all';
+    public urlPaises = 'https://restcountries.eu/rest/v2/region/';
 
     constructor(private http: HttpClient) { }
 
@@ -15,7 +15,7 @@ export class EntidadesService {
         return this.http.get(this.urlUsuarios);
     }
 
-    getPaises() {
-        return this.http.get(this.urlPaises);
+    getPaises(region: string) {
+        return this.http.get(`${this.urlPaises}${region}`);
     }
 }

@@ -1,0 +1,18 @@
+
+<div class="row">
+    <div class="col text-center mt-5">
+        <h1>Region: {{ region | uppercase }} </h1>
+        <button class="btn btn-primary mr-2" (click)="getPaises('europe')">Region Europe</button>
+        <button class="btn btn-primary mr-2" (click)="getPaises('asia')">Region Asia</button>
+        <button class="btn btn-primary mr-2" (click)="getPaises('americas')">Region América</button>
+        <button class="btn btn-primary mr-2" (click)="getPaises('africa')">Region Africa</button>
+    </div>
+</div>
+
+<div class="row">
+    <app-listado-paises [entidadesPaises]="entidadesPaises" (paisSeleccionado)="tomarPaisParaDetalles($event)">
+    </app-listado-paises>
+    
+    <app-detalle-pais [entidadPais]="entidadPais">
+    </app-detalle-pais>
+</div>

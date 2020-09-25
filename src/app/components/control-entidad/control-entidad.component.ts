@@ -39,13 +39,13 @@ export class ControlEntidadComponent implements OnInit {
             this.entidadesUsuario = JSON.parse(localStorage.getItem('entidadesUsuario'));
         
         if(!localStorage.getItem('entidadesPaises')) {
-            this.entidadesService.getPaises()
+            this.entidadesService.getPaises('europe')
                 .subscribe((resp: EntidadPais[]) => {
                     this.entidadesPaises = resp;
-                    localStorage.setItem("entidadesPaises", JSON.stringify(this.entidadesUsuario));
+                    localStorage.setItem("entidadesPaises", JSON.stringify(this.entidadesPaises));
                 });
         }else
-            this.entidadesUsuario = JSON.parse(localStorage.getItem('entidadesUsuario'));
+            this.entidadesUsuario = JSON.parse(localStorage.getItem('entidadesPaises'));
 
         if(localStorage.getItem('entidadesUsuarioBorradas')) {
             this.entidadesUsuarioBorradas = JSON.parse(localStorage.getItem('entidadesUsuarioBorradas'));

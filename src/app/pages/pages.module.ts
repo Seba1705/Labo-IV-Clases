@@ -9,6 +9,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { LoginComponent } from './login/login.component';
 import { DirectivasComponent } from './directivas/directivas.component';
+import { PracticaComponent } from './practica/practica.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { DirectivasComponent } from './directivas/directivas.component';
         InputOutputComponent,
         BienvenidoComponent,
         LoginComponent,
-        DirectivasComponent
+        DirectivasComponent,
+        PracticaComponent
     ],
     imports: [
         CommonModule,
